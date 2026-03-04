@@ -14,14 +14,14 @@ The code provided here is for the  **Comprehensive assessment and benchmark of d
 * REINVENT4 can conveniently calculate a wide range of basic physicochemical properties (alternatively, these properties can also be computed using RDKit). By following the [provided instructions](https://github.com/MolecularAI/REINVENT4/blob/main/configs/scoring.toml), the calculated metrics can be obtained. Here, `example2_reinvent.csv` is presented as an example output file. QED, SA score, SlogP, Number of stereo centers, and Tanimoto similarity ECF6 are averaged and used in the manuscript. 
 
 
-* We provide all generated molecules (as well as the metrics calculated by REINVENT4) used in the manuscript as `data.zip `. If the model generates more than 250 molecules, only the first 250 are retained for metric calculation.
+* We provide all generated molecules (as well as the metrics calculated by REINVENT4) used in the manuscript as `data.zip`. If the model generates more than 250 molecules, only the first 250 are retained for metric calculation.
   
 
 
 
 ## 3. Retro*
 
-* Retro* is used for predicting molecular retrosynthetic routes, and the calculations can be performed according to the code provided in [its repository](https://github.com/binghong-ml/retro_star). Using `example2_reinvent.csv` as an input file, the output file would be `	example3_retro.csv`. The total Retro* score is the proportion of molecules for which a valid retrosynthetic route is successfully predicted.
+* Retro* is used for predicting molecular retrosynthetic routes, and the calculations can be performed according to the code provided in [its repository](https://github.com/binghong-ml/retro_star). Using `example2_reinvent.csv` as an input file, the output file would be `example3_retro.csv`. The total Retro* score is the proportion of molecules for which a valid retrosynthetic route is successfully predicted.
 
  
 
