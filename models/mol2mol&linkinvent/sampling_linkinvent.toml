@@ -1,0 +1,23 @@
+# REINVENT4 TOML input example for sampling
+#
+
+
+run_type = "sampling"
+device = "cuda:0"  # set torch device e.g. "cpu"
+json_out_config = "_sampling.json"  # write this TOML to JSON
+
+
+[parameters]
+
+# Uncomment one of the comment blocks below.  Each generator needs a model
+# file and possibly a SMILES file with seed structures.
+
+## LinkInvent: find a linker/scaffold to link two fragments
+model_file = "priors/linkinvent.prior"
+smiles_file = "linkinvent_5T35.smi"  # 2 warheads per line separated with '|'
+
+output_file = 'sampling_linkinvent.csv'  # sampled SMILES and NLL in CSV format
+
+num_smiles = 250  # number of SMILES to be sampled, 1 per input SMILES
+unique_molecules = true  # if true remove all duplicatesd canonicalize smiles
+randomize_smiles = true # if true shuffle atoms in SMILES randomly
