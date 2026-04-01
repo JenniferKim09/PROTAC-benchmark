@@ -1,6 +1,10 @@
 The code provided here is for the  **Comprehensive assessment and benchmark of deep generative models for proteolysis targeting Chimera (PROTAC) design** paper and serves as an illustrative example of the metric calculations described in the manuscript.  
 
 
+## 0. generate molecules from GenAIs
+
+ The models used in the benchmark all provide their code in their corresponding Github repository. So, if you want to run their codes, it is recommended to go to their Github repository for detailed instructions. Alternatively, we also provide the used data (and json files, if necessary) and step-by-step codes in `./models`. 
+
 
 ## 1. Data Preparation
 
